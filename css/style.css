@@ -12,13 +12,13 @@ body {
 
 header, footer {
   background-color: #C1D3FE;
-  text-align: left;
+  text-align: Left;
  /* min-width: 500px; */
 }
 
 header {
   font-family: 'Cormorant Garamond', sans-serif;
-  color: #858ae3;
+  color: #6f75de;
   min-height: 100vh;
   display: flex;
 }
@@ -26,8 +26,9 @@ header {
 main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(40%, 1fr) ) ;
-  grid-gap: 20px;
+  grid-gap: 18px;
   margin-top: 44px;
+  margin-bottom: 3px;
   justify-items: center;
   justify-content: center;
   align-items: stretch;
@@ -44,7 +45,7 @@ h1 {
 
 h2 {
   font-family: 'Oswald', sans-serif;
-  font-size: 27px;
+  font-size: 21px;
   font-weight: 600;
   letter-spacing: 0.3px;
   text-align: left;
@@ -67,8 +68,8 @@ img {
 }
 
 .bio {
-color: #858ae3;
-font-size: 28.5px;
+color: #6f75de;
+font-size: 26px;
 font-family: 'Cormorant Garamond', sans-serif;
 }
 
@@ -80,9 +81,9 @@ font-family: 'Cormorant Garamond', sans-serif;
 
 .myButton {
   border-radius: 28px;
-  border: 1px solid #858ae3;
+  border: 1px solid #6f75de;
   cursor: pointer;
-  color: #858ae3;
+  color: #6f75de;
   font-size: 20px;
   padding: 16px 31px;
   text-decoration: none;
@@ -98,8 +99,8 @@ font-family: 'Cormorant Garamond', sans-serif;
     top:1px;
 }
 
-.recipe {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+.project {
+  box-shadow: 0 1px 1px 0 rgba(64, 53, 53, 0.39);
   width: 100%;
 }
 
@@ -117,26 +118,26 @@ font-family: 'Cormorant Garamond', sans-serif;
   font-weight: 500;
   letter-spacing: 0.3px;
   text-align: left;
-  color: #4a4a4a;
+  color: #0a0908;
   position: relative;
   bottom: 5px;
 }
 
 .description {
   font-family: 'Cormorant Garamond', sans-serif;
-  font-size: 16px;
+  font-size: 15.8px;
   font-weight: 300;
   line-height: 1.29;
   letter-spacing: 0.1px;
   text-align: left;
-  color: #4a4a4a;
+  color: #0a0908;
   padding: 10px 0px 10px 10px;
-  border-top: 1px solid #4a4a4a;
+  border-top: 1px solid #6f75de;
 }
 
 .logo {
   width: 115px;
-  height: 21.1px;
+  height: 21px;
   object-fit: contain;
   padding: 20px;
 }
@@ -149,18 +150,38 @@ font-family: 'Cormorant Garamond', sans-serif;
   footer div {
     height: 100%;
     font-family: 'Oswald', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     display: flex;
     align-content: center;
-    padding: 10px 20px;
-    color: rgba(255, 255, 255, 0.5);
+    justify-content: space-between/flex-end; 
+    padding: 7px 14px;
+    color: rgba(255, 255, 255, 0.525);
+  }
+
+  .copyright {
+    margin: auto 0;
+  }
+  
+  .icons {
+    list-style-type: none;
+    display: inline-flex;
+  }
+  
+  .icons a {
+    margin: 0 8px;
+    color: rgb(255, 255, 255, 0.525); /* You can adjust the 0.5 to, say, 0.7 if your icons are too faint */
+  }
+  
+  .icons a:hover {
+    color: rgb(255, 255, 255, 0.8); /* See note above */
   }
 
 @media all and (max-width:700px) {
   main {
     grid-template-columns: 1fr;
+    margin: 44px auto;
   }
   img {
-    height: 40vh;
+    height: 25vh;
   }
 }
