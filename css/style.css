@@ -153,8 +153,8 @@ font-family: 'Cormorant Garamond', sans-serif;
     font-size: 14px;
     display: flex;
     align-content: center;
-    justify-content: space-between/flex-end; 
-    padding: 7px 14px;
+    justify-content: flex-start;
+    padding: 7px 14px; 
     color: rgba(255, 255, 255, 0.525);
   }
 
@@ -169,11 +169,11 @@ font-family: 'Cormorant Garamond', sans-serif;
   
   .icons a {
     margin: 0 8px;
-    color: rgb(255, 255, 255, 0.525); /* You can adjust the 0.5 to, say, 0.7 if your icons are too faint */
+    color: rgb(255, 255, 255, 0.525); 
   }
   
   .icons a:hover {
-    color: rgb(255, 255, 255, 0.8); /* See note above */
+    color: rgb(255, 255, 255, 0.525); 
   }
 
 @media all and (max-width:700px) {
